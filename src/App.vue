@@ -1,16 +1,14 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="hello">
+    <com-color-button type="success" :disabled="false">按鈕</com-color-button>
+    <com-color-button :disabled="true">按鈕</com-color-button>
+  </div>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
 
+<script>
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
 }
 </script>
 
